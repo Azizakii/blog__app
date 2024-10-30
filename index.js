@@ -14,6 +14,8 @@ newPostBtnNode.addEventListener('click', function() {
     const postFromUser = getPostFromUser();
 
     addPost(postFromUser);
+    postTitleInputNode.value = '';
+    postTextInputNode.value = '';
 
     renderPosts ();
 })
